@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import { Container, Menu } from "semantic-ui-react";
+import LandingPage from "../src/screens/LandingPage";
+import AppHeader from "../src/components/AppHeader";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <AppHeader />
+      <div>
+        <Menu fixed="top" inverted>
+          <Routes>
+            <Route path="/" element={<Navigate to="/" replace />} />
+          </Routes>
+        </Menu>
+        <Container style={{ marginTop: "2em" }}>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+          </Routes>
+        </Container>
+      </div>
+    </Router>
   );
 }
 
