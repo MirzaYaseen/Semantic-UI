@@ -1,3 +1,10 @@
+# View
+![image](https://github.com/MirzaYaseen/Semantic-UI/assets/85738256/b6c92e1f-0fed-4102-b8bb-200b78c88e13)
+
+![image](https://github.com/MirzaYaseen/Semantic-UI/assets/85738256/2d8775e9-fdaa-4fec-b4b2-fd881f8d650e)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
