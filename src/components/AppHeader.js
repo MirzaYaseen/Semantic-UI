@@ -8,8 +8,8 @@ import {
   Modal,
   Header,
 } from "semantic-ui-react";
-import logoImage from "../assets/logo1.png"; // Import your logo image
-import toggle from "../assets/toggle.png"; // Import your logo image
+import logoImage from "../assets/logo1.png"; 
+import toggle from "../assets/toggle.png"; 
 import cross from "../assets/cross1.png";
 import "../css/AppHeader.css";
 
@@ -31,7 +31,7 @@ function NavBar() {
     };
 
     window.addEventListener("resize", handleResize);
-    handleResize(); // Initial check
+    handleResize(); 
 
     return () => window.removeEventListener("resize", handleResize);
   }, [isMobile, modalOpen]);
